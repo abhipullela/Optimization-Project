@@ -1,0 +1,92 @@
+# ==============================
+
+# Python
+
+# ==============================
+
+**pycache**/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# ==============================
+
+# Virtual environments
+
+# ==============================
+
+.venv/
+venv/
+env/
+
+# ==============================
+
+# Environment variables and secrets
+
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+# ==============================
+
+# Raw datasets
+
+# ==============================
+
+data/raw/*
+!data/raw/README.md
+
+# ==============================
+
+# Generated and intermediate data
+
+# ==============================
+
+data/interim/*
+!data/interim/README.md
+
+data/processed/*
+!data/processed/README.md
+
+# ==============================
+
+# Jupyter Notebook
+
+# ==============================
+
+.ipynb_checkpoints/
+
+# ==============================
+
+# Logs and temporary files
+
+# ==============================
+
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# ==============================
+
+# IDE settings
+
+# ==============================
+
+.vscode/
+.idea/
+
+# ==============================
+
+# Test and coverage artifacts
+
+# ==============================
+
+.pytest_cache/
+.coverage
+htmlcov/

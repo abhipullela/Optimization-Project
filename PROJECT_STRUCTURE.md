@@ -6,9 +6,13 @@ Optimization-Project/
 │
 ├── data/
 │   ├── raw/
-│   │   └── README.md
+│   │   ├── README.md
+│   │   ├── OPT_DATA.zip
+│   │   └── nifty500_stocks.csv
+│   │
 │   └── processed/
 │       └── README.md
+│       └── cleaned_primary_master.csv #AutomaticGeneration
 │
 ├── notebooks/
 │   ├── 01_data_exploration.ipynb
