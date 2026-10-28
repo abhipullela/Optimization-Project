@@ -325,9 +325,12 @@ def build_volume_features(df: pd.DataFrame) -> pd.DataFrame:
 
     rolling_volume_mean = (
         grouped_volume
-        .rolling(window=20, min_periods=20)
-        .mean()
-        .reset_index(level=0, drop=True)
+        .transform(
+            lambda s: s.shift(1).rolling(
+                window=20,
+                min_periods=20,
+            ).mean()
+        )
     )
 
     df["relative_volume_20"] = (
