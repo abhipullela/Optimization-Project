@@ -31,7 +31,7 @@ import pandas as pd
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 DEFAULT_INPUT = (
-    PROJECT_ROOT / "data" / "processed" / "cleaned_primary_master.csv"
+    PROJECT_ROOT / "data" / "processed" / "adjusted_primary_master.csv"
 )
 
 DEFAULT_OUTPUT = (
