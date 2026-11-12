@@ -77,7 +77,8 @@ def main():
             target_weights = align_weights(res.weights_frame(), all_tickers)
             turnover = res.turnover
             tcost = turnover * args.transaction_cost
-        except Exception:
+        except Exception as e:
+            print(f"\nOptimizer crashed on {reb_date}: {e}")
             target_weights = current_weights.copy()
             turnover = 0.0
             tcost = 0.0
